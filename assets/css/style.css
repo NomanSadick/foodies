@@ -1,0 +1,1144 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    width: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+h1 {
+    font-size: 4.6875rem;
+    line-height: 5.6875rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 3.75rem;
+    line-height: 4.5625rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 3.125rem;
+    line-height: 3.75rem;
+}
+
+h4 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 600;
+}
+
+.h4--small {
+    font-size: 2rem;
+    line-height: 2.4375rem;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 1.5rem;
+    line-height: 1.8125rem;
+    font-weight: 500;
+}
+
+.h5--small {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 1rem;
+    line-height: 1.875rem;
+    color: #1D1D1F;
+    font-weight: 400;
+}
+
+.row {
+    width: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    max-width: 1216px;
+    margin: 0 auto;
+}
+
+.row::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.row [class*="col-"] {
+    float: left;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul.navbar__list__inline li {    
+    display: inline-block;
+}
+
+ul.navbar__list__inline li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    padding-left: 35px;
+}
+
+
+ul.navbar__list__inline .active {
+    color: #06C167;
+}
+
+ul.navbar__list__inline li a:hover {
+    color: #06C167;
+}
+
+#header {
+    background: #F3FCF7;
+}
+
+.navbar {
+    padding-top: 50px;
+}
+
+.menu__icon {
+    visibility: hidden;
+}
+
+.navbar__menu ul {
+    float: right;
+}
+
+.hero__btn {
+    background: #06C167;
+    color: #fff;
+    padding: 20px 40px 20px 40px;
+}
+
+.hero__btn i {
+    margin-left: 10px;
+}
+
+.hero {
+    padding-top: 50px;
+}
+
+.hero__content {
+    padding-top: 60px;
+}
+
+.hero__content h6 {
+    padding-right: 255px;
+    padding-bottom: 20px;
+}
+
+.hero__img {
+    text-align: center;
+    position: relative;
+}
+
+.hero__img {
+    margin-bottom: -120px;
+}
+
+.dots_img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+}
+
+.hero__img a {
+    text-decoration: none;
+    color: #1D1D1F;
+    display: inline-block;
+}
+
+.hero__img .hero__img__left img{
+    margin-left: 15px;
+}
+
+.hero__img .hero__img__right img {
+    margin-right: 15px;
+}
+
+.hero__img__left {
+    background: #fff;
+    padding: 20px 40px 20px 40px;
+    border-radius: 26px;
+    position: absolute;
+    left: -30px;
+    top: 270px;
+    z-index: 9;
+}
+
+.hero__img__right {
+    background: #fff;
+    padding: 8px 40px 8px 40px;
+    border-radius: 26px;
+    position: absolute;
+    right: 0px;
+    top: 200px;
+    z-index: 9;
+}
+
+.hero__img__right img {
+    vertical-align: middle;
+}
+
+#clients_logo{
+    padding: 40px 0;
+}
+
+#clients_logo ul li {
+    display: inline-block;
+    margin: 0 auto;
+    margin-left: 20px;
+}
+
+#facilites{
+    margin-top: 80px;
+}
+
+.facilites__items{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.facilites__items .col-8{
+    margin-top: 11px;
+}
+
+.facilites__items .col-8 h6{
+    padding-bottom: 0;
+}
+
+#benefit {
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+.benefit__image {
+    background: #F3FAFB;
+    text-align: center;
+}
+
+.benefit__image img{
+    padding-bottom: 60px;
+}
+
+.benefit__content {
+    margin-top: 100px;
+}
+
+.benefit__content h6 {
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.benefit__content h2 {
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+
+.benefit__content ul {
+    margin-left: 50px;
+}
+
+.benefit__content ul li {
+    margin-bottom: 15px;
+}
+
+.benefit__content ul i {
+    padding-right: 15px;
+    color: #06C167;
+}
+
+.benefit__image img{
+    padding-bottom: 60px;
+}
+
+#current__status {
+    margin-bottom: 100px;
+}
+
+.current__status__content {
+    margin-top: 100px;
+}
+
+.current__status__content h6 {
+    margin-bottom: 30px;
+}
+
+.current__status__content h2 {
+    margin-bottom: 40px;
+}
+
+.current__status__btn {
+    background: #06C167;
+    color: #fff;
+    padding: 30px 30px 25px 30px;
+}
+
+.current__status__btn i {
+    margin-left: 10px;
+}
+
+.sold__product h4 {
+    color: #06C167;
+}
+
+.feedback {
+    text-align: center;
+}
+
+.feedback h4 {
+    color: #06C167;
+}
+
+.sold__product h4 {
+    color: #06C167;
+}
+
+.official__store {
+    text-align: center;
+}
+
+.official__store h4 {
+    color: #06C167;
+}
+
+.current__status__image {
+    background: #F3FAFB;
+}
+
+.current__status__image img {
+    padding-bottom: 140px;
+    float: right;
+}
+
+#products {
+    margin-top: 100px;
+}
+
+#products h2 {
+    margin-bottom: 45px;
+    margin-top: 10px;
+}
+
+.product__items {
+    text-align: center;
+}
+
+.product__items > :nth-child(4){
+    float: right;
+}
+
+.product__items > :nth-child(2){
+    margin-left: 80px;
+}
+
+.product__items > :nth-child(3){
+    margin-left: 80px;
+}
+
+.product__item {
+    border: 2px solid #06C167;
+    width: 20%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.product__item__price {
+    color: #06C167;
+}
+
+.product__item img {
+    margin-top: 20px;
+}
+
+.product__item h5 {
+    margin-bottom: 10px;
+}
+
+.product__item button {
+    border: 2px solid #06C167;
+    color: #06C167;
+    padding: 8px 15px 8px 15px;
+    margin-bottom: 20px;
+}
+
+.features__top {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.food__varties {
+    overflow: hidden;
+}
+
+.food__varties__image {
+    height: 303px;
+}
+
+.food__varties__image img {
+    width: 100%;
+    height: 100%;
+}
+
+.food__varties__card__descriptions {
+    background: #F3FCF7;
+    box-sizing: border-box;
+    border: 1.5px solid #06C167;
+    height: 303px;
+}
+
+.food__varties__card__descriptions .h4--small {
+    background: #F3FCF7;
+    padding-right: 45px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.food__varties__card__descriptions h6 {
+    padding-right: 104px;
+    margin-left: 30px;
+    margin-bottom: 35px;
+}
+
+.food__varties__card__descriptions__btn {
+    background: #E6F9F0;
+    padding: 15px 30px 15px 30px;
+    color: #06C167;
+    margin-bottom: 45px;
+    margin-left: 30px;
+}
+
+.food__varties__card__descriptions__btn i {
+    margin-left: 10px;
+}
+
+#banner {
+    margin-top: 120px;
+}
+
+.banner__bg {
+    background: url(../images/banner/banner.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+}
+
+#banner h2 {
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.banner__btn {
+    background: #06C167;
+    color: #fff;
+    padding: 25px 35px 25px 35px;
+    margin-bottom: 70px;
+}
+
+.banner__btn i {
+    margin-left: 15px;
+}
+
+#footer {
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.footer__left ul li {
+    display: inline-block;
+}
+
+.footer__left ul li {
+    padding-left: 10px;
+}
+
+.footer__left img{
+    padding-bottom: 15px;
+}
+
+.footer__left  h6 {
+    padding-right: 147px;
+}
+
+#footer ul {
+    margin-top: 20px;
+ }
+
+#footer ul li {
+    padding-bottom: 10px;
+ }
+
+#footer ul li a {
+   text-decoration: none;
+   color: #1D1D1F;
+}
+
+.footer__right h5 {
+    margin-bottom: 10px;
+}
+
+.footer__right h6 {
+    margin-bottom: 30px;
+    padding-right: 100px;
+}
+
+#footer input {
+    background: #F0F1EC;
+    border: none;
+    padding: 12px 0px 12px 10px;
+    border-radius: 2px;
+    color: #1D1D1F;
+ }
+
+ .subscribe__btn {
+    background: #06C167;
+    color: #fff;
+    padding: 12px 25px 11px 25px;
+    margin-left: 5px;
+ }
+
+ .copyright {
+     margin-top: 60px;
+     text-align: center;
+ }
+
+ @media screen and (max-width: 1199px)  {
+
+    h1 {
+        font-size: 4.0625rem;
+        line-height: 5.0625rem;
+    }
+
+    h2 {
+        font-size: 3.125rem;
+        line-height: 3.875rem;
+    }
+
+    .hero__content h1 {
+        padding-right: 71px;
+    }
+
+    .hero__content h6 {
+        padding-right: 85px;
+    }
+
+
+    .hero__img .image {
+        width: 100%;
+    }
+      
+
+    .product__item img {
+        width: 85%;
+    }
+
+    .hero__img__right {
+        right: -20px;
+    }
+
+    .facilites__item .col-8 h5 {
+        padding-left: 5px;
+    }
+
+    .facilites__item .col-8 h6 {
+        padding-left: 5px;
+    }
+
+    .current__status__content h2 {
+        margin-right: 50px;
+    }
+
+    .food__varties__card__descriptions .h4--small {
+        padding-right: 20px;
+    }
+    
+    .food__varties__card__descriptions h6 {
+        padding-right: 10px;
+    }
+
+    .product__items > :nth-child(2){
+        margin-left: 70px;
+    }
+    
+    .product__items > :nth-child(3){
+        margin-left: 70px;
+    }
+
+    .product__item img {
+        width: 85%;
+    }
+
+    #banner h2 {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    #footer input {
+        padding: 12px 2px 12px 5px;
+    }
+
+    .subscribe__btn {
+        padding: 12px 20px 11px 20px;
+    }
+
+    .footer__left h6 {
+        padding-right: 48px;
+    }
+
+    .footer__right h6 {
+        padding-right: 30px;
+    }
+ }
+
+ @media screen and (max-width: 992px)  {
+
+    h1 {
+        font-size: 3rem;
+        line-height: 3.75rem;
+    }
+
+    .col-3-md {
+        width: 25%;
+    }
+
+    .col-4-md {
+        width: 33.33%;
+    }
+
+    .col-6-md {
+        width: 50%;
+    }
+
+    .col-9-md {
+        width: 75%;
+    }
+
+    .col-10-md {
+        width: 83.33%;
+    }
+
+    .col-12-md {
+        width: 100%;
+    }
+
+    .navbar__list__inline{
+        display: none;
+    }
+
+    .hero__img__left {
+        top: 335px;
+    }
+
+    .hero__img__right {
+        right: -20px;
+        top: 270px;
+    }
+    
+    .menu__icon {
+        visibility: visible;
+        cursor: pointer;
+        float: right;
+    }
+
+    .hero__content h1{
+        padding-right: 30px;
+
+    }
+  
+    .hero__content h6 {
+        padding-right: 20px;
+    }
+
+    .hero__img .image{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #clients_logo{
+        margin-top: 110px;
+    }
+
+    #clients_logo ul {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .facilites__item {
+        margin-bottom: 15px;
+    }
+   
+    #benefit {
+        margin-top: 110px;
+    }
+
+    .benefit__image img {
+        padding-bottom: 20px;
+        transform: translateY(-55px);
+    }
+
+    .benefit__content h6 {
+        margin-left: 0px;
+    }
+
+    .benefit__content h2 {
+        margin-right: 145px;
+        margin-left: 0px;
+    }
+
+    .benefit__content ul {
+        margin-left: 0px;
+    }
+
+    .current__status__content {
+        margin-top: 0px;
+    }
+
+    .current__status__content h2 {
+        margin-right: 191px;
+    }
+
+    .current__status__content {
+        margin-bottom: 130px;
+    }
+
+    .feedback {
+        text-align: left;
+    }
+
+    .official__store {
+        text-align: left;
+    }
+
+    .current__status__image {
+        text-align: center;
+    }
+
+    .current__status__image img {
+        padding-bottom: 20px;
+        transform: translateY(-55px);
+        float: none;
+    }
+
+    .product__item {
+        border: 2px solid #06C167;
+        width: 45%;
+        margin-bottom: 30px;
+    }
+
+    .product__items > :nth-child(4){
+        float: right;
+    }
+    
+    .product__items > :nth-child(2){
+        margin-left: 0px;
+        float: right;
+    }
+    
+    .product__items > :nth-child(3){
+        margin-left: 0px;
+    }
+
+    #banner h2 {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    .footer__right h6 {
+        padding-right: 310px;
+    }
+
+    .subscribe__btn {
+        margin-left: 15px;
+        padding: 12px 25px 11px 25px;
+    }
+  
+ }
+
+ @media screen and (max-width: 576px)  {
+
+    h1 {
+        font-size: 3.1875rem;
+        line-height: 3.875rem;
+    }
+
+    h2 {
+        font-size: 2.1875rem;
+        line-height: 2.625rem;
+    }
+
+    .col-12-sm {
+        width: 100%;
+    }
+
+    .hero__content {
+        padding-top: 0px;
+    }
+
+    .hero__content h1 {
+        padding-right: 0px;
+        text-align: center;
+    }
+
+    .hero__content h6 {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .hero__btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .hero__img {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .hero__img .image {
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .hero__img__right {
+        left: 0;
+        top: 420px;
+        margin: auto;
+        width: 70%;
+        box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero__img__left {
+        left: 12px;
+        right: 0;
+        top: 350px;
+        margin: auto;
+        width: 70%;
+        box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero__img a {
+        font-size: 12px;
+    }
+
+    #clients_logo {
+        padding-top: 130px;
+    }
+
+    #clients_logo ul li {
+        margin: 0 10px 10px 0;
+    }
+
+    #facilites {
+        margin-top: 10px;
+    }
+
+    #benefit {
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+
+    .benefit__content {
+        margin-top: 60px;
+    }
+
+    .benefit__image {
+        background: #F0F1EC;
+        text-align: center;
+    }
+
+    .benefit__image img {
+        padding-bottom: 0px;
+        transform: translateY(-20px);
+        width: 88%;
+    }
+
+    .benefit__content h6 {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .benefit__content h2 {
+        margin-right: 0px;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .benefit__content ul {
+        margin-left: 20px;
+    }
+
+    #current__status {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+        margin-top: 60px;
+    }
+
+    .current__status__content {
+        margin-bottom: 70px;
+    }
+
+    .current__status__content {
+        order: 2;
+    }
+   
+    .current__status__content {
+        text-align: center;
+    }
+
+    .current__status__content h2 {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .current__status__btn {
+        width: 100%;
+    }
+
+    .current__status__image {
+        background: #F0F1EC;
+        text-align: center;
+        order: 1;
+        margin-bottom: 50px;
+    }
+
+    .current__status__image img {
+        padding-bottom: 0px;
+        transform: translateY(-20px);
+        width: 88%;
+    }
+
+    .feedback {
+        text-align: center;
+    }
+
+    .official__store {
+        text-align: center;
+    }
+
+    .current__status__btn {
+        padding: 20px 72px 20px 72px;
+    }
+
+    #products h2 {
+        text-align: center;
+    }
+
+    #products h6 {
+        text-align: center;
+    }
+
+    .food__varties__mobile {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .food__varties__image__mobile {
+        text-align: center;
+    }
+
+    .food__varties__image__mobile img {
+        width: 90%;
+    }
+
+    .food__varties__card__descriptions__moblie__first__order  {
+        order: 2;
+    }
+
+    .food__varties__image__mobile__second__order {
+        order: 1;
+        text-align: center;
+    } 
+
+    .food__varties__image__mobile__second__order img {
+        width: 90%;
+    } 
+
+    .food__varties__card__descriptions__moblie__third__order  {
+        order: 4;
+    } 
+
+     .food__varties__image__mobile__four__order {
+        order: 3;
+        text-align: center;
+    }
+
+    .food__varties__image__mobile__four__order img {
+       width: 90%;
+    }
+
+    #banner {
+        margin-top: 50px;
+    }
+
+    #banner h2 {
+        padding-left: 0px;
+        padding-right: 0px;
+        text-align: center;
+    }
+
+    .banner__btn {
+        width: 100%;
+        padding: 18px 45px 18px 45px;
+    }
+
+    #banner{
+        background: url(../images/banner/banner.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    #footer {
+        text-align: center;
+    }
+
+    .footer__left h6 {
+        padding-right: 0px;
+    }
+
+    .about__us {
+        margin-top: 30px;
+    } 
+
+    .company {
+        margin-top: 30px;
+    }
+
+    .footer__right {
+        margin-top: 30px;
+    }
+
+    .footer__right h6 {
+        padding-right: 0px;
+    }
+
+    #footer input {
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 12px 0px 12px 0px;
+    }
+
+    .subscribe__btn {
+        margin-left: 0px;
+        padding: 11px 112px 11px 112px;
+        width: 100%;
+    }
+ }
